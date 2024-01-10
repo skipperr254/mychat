@@ -1,45 +1,102 @@
-# MyChat
+# Zoom-Like Video Call Application
 
-## Description 
-A Group video calling application using the Agora Web SDK with a Django backend.
+This application is a Zoom-like video call platform developed using Django, JavaScript, and agora.io for real-time video communication. It allows multiple users to join the same meeting, similar to Zoom's functionality.
 
-##  How to use this source code
+## Features
 
-#### 1 - Clone repo
-```
-git clone https://github.com/divanov11/mychat
-```
+- **Real-time Video Calls:** Utilizes agora.io to facilitate seamless and high-quality video communication.
+- **Multi-Participant Meetings:** Supports multiple participants joining a single meeting room.
+- **User Authentication:** Utilizes Django's authentication system to manage user access and permissions.
+- **Meeting Creation and Management:** Users can create, join, and manage meetings.
+- **Responsive UI:** Provides a user-friendly interface across different devices.
 
-#### 2 - Install requirements
-```
-cd mychat
-pip install -r requirements.txt
-```
+## Installation
 
-#### 3 - Update Agora credentals
-In order to use this project you will need to replace the agora credentials in `views.py` and `streams.js`.
+### Prerequisites
 
-Create an account at agora.io and create an `app`. Once you create your app, you will want to copy the `appid` & `appCertificate` to update `views.py` and `streams.js`. If you have questions about where to get your app I'd recommend referencing this link `https://youtu.be/HX6AM_1-jNM?t=88`
+- Python (version >= 3.6)
+- Node.js and npm
 
-###### views.py
-```
-def getToken(request):
-    appId = "YOUR APP ID"
-    appCertificate = "YOUR APPS CERTIFICATE"
-    ......
-```
+### Steps
 
-###### streams.js
-```
-....
-const APP_ID = 'YOUR APP ID'
-....
-```
+1. Clone the repository:
 
+    ```bash
+    git clone https://github.com/your-username/zoom-like-app.git
+    ```
 
-#### 4 - Start server
-```
-python manage.py runserver
-```
+2. Navigate to the project directory:
 
+    ```bash
+    cd zoom-like-app
+    ```
 
+3. Install Python dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Install JavaScript dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Configuration
+
+1. **Django Settings:**
+
+    - Create a `.env` file in the root directory.
+    - Define the following environment variables:
+
+        ```dotenv
+        DEBUG=TRUE  # Set to False in production
+        SECRET_KEY=YourSecretKeyHere
+        AGORA_API_KEY=YourAgoraAPIKey
+        # Other configuration variables...
+        ```
+
+2. **Agora.io Configuration:**
+
+    - Sign up for an account on [agora.io](https://www.agora.io).
+    - Obtain the API Key and update the `AGORA_API_KEY` in the `.env` file.
+
+## Usage
+
+1. Start the Django server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+2. Run the frontend (assuming webpack or any bundler is set up):
+
+    ```bash
+    npm start
+    ```
+
+3. Access the application in your browser at `http://localhost:8000`.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/improvement`).
+3. Make your changes and commit them (`git commit -am 'Add feature/improvement'`).
+4. Push the branch (`git push origin feature/improvement`).
+5. Create a Pull Request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- Thanks to [agora.io](https://www.agora.io) for their real-time communication platform.
+- Inspiration drawn from Zoom's user-friendly interface and multi-participant functionalities.
+
+## Support
+
+For any inquiries or support, please contact [Your Email Address].
