@@ -96,7 +96,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 - Thanks to [agora.io](https://www.agora.io) for their real-time communication platform.
 - Inspiration drawn from Zoom's user-friendly interface and multi-participant functionalities.
-
-## Support
-
-For any inquiries or support, please contact [Your Email Address].
