@@ -4,8 +4,6 @@ const TOKEN = sessionStorage.getItem('token')
 const CHANNEL = sessionStorage.getItem('room')
 let UID = sessionStorage.getItem('UID')
 
-// 007eJxTYCi/tO9zdmzLpVix9zvOzlkc1rdJ7ZPvpqM7t9x2uWGf786uwGCcmGSUZmxgnmxsamySapBqmZhslJpokJZiZGyUaJBs2vFhXmpDICNDZh8XEyMDBIL4LAy5iZl5DAwAOU4iIw==
-
 let NAME = sessionStorage.getItem('name')
 
 const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
