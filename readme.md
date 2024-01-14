@@ -28,19 +28,13 @@ This application is a Zoom-like video call platform developed using Django, Java
 2. Navigate to the project directory:
 
     ```bash
-    cd zoom-like-app
+    cd mychhat
     ```
 
 3. Install Python dependencies:
 
     ```bash
     pip install -r requirements.txt
-    ```
-
-4. Install JavaScript dependencies:
-
-    ```bash
-    npm install
     ```
 
 ## Configuration
@@ -70,13 +64,7 @@ This application is a Zoom-like video call platform developed using Django, Java
     python manage.py runserver
     ```
 
-2. Run the frontend (assuming webpack or any bundler is set up):
-
-    ```bash
-    npm start
-    ```
-
-3. Access the application in your browser at `http://localhost:8000`.
+2. Access the application in your browser at `http://localhost:8000`.
 
 ## Contributing
 
