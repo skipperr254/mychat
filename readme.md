@@ -22,7 +22,7 @@ This application is a Zoom-like video call platform developed using Django, Java
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/zoom-like-app.git
+    git clone https://github.com/skipperr254/mychat.git
     ```
 
 2. Navigate to the project directory:
