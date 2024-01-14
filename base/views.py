@@ -15,7 +15,7 @@ def lobby(request):
     return render(request, 'base/lobby.html')
 
 def room(request):
-    return render(request, 'base/room.html'))
+    return render(request, 'base/room.html')
 
 
 def getToken(request):
