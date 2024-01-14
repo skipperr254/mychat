@@ -6,7 +6,6 @@ This application is a Zoom-like video call platform developed using Django, Java
 
 - **Real-time Video Calls:** Utilizes agora.io to facilitate seamless and high-quality video communication.
 - **Multi-Participant Meetings:** Supports multiple participants joining a single meeting room.
-- **User Authentication:** Utilizes Django's authentication system to manage user access and permissions.
 - **Meeting Creation and Management:** Users can create, join, and manage meetings.
 - **Responsive UI:** Provides a user-friendly interface across different devices.
 
